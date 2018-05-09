@@ -1,0 +1,4 @@
+<div *ngIf="comments$ | async as comments">
+    <app-card *ngFor="let comment of comments"
+              [label]="comment"></app-card>
+</div>
